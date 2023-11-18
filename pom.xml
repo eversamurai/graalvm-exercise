@@ -1,0 +1,11 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.exercise.app</groupId>
+    <artifactId>graal-web-app</artifactId>
+    <version>21.0.1</version>
+    <properties>
+        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+    </properties>
+</project>
