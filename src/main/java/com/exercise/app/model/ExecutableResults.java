@@ -6,6 +6,5 @@ import org.springframework.stereotype.Component;
 public class ExecutableResults {
 
 
-
-    public ExecutableResults(String name){}
+    public ExecutableResults(){}
 }

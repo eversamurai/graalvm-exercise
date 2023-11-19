@@ -20,4 +20,8 @@ public class WebController {
     public UUID executeCommand(){
         return executorService.executeCommand(null);
     }
+    @GetMapping("/myLetter")
+    public String getLetter(String name, String city){
+       return executorService.renderLetter(name,city);
+    }
 }

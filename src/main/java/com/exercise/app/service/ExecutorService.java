@@ -8,6 +8,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 @Component
@@ -27,5 +29,14 @@ public class ExecutorService {
     public UUID executeCommand(ExcutableRequest excutableRequest){
         log.info("Generating random UID");
         return UUID.randomUUID();
+    }
+
+    public String renderLetter(String name, String city){
+        Map<String, String> params = new HashMap<>();
+        params.put("name",name);
+        params.put("city",city);
+
+         builder.getLetter(params);
+         return "Letter generated";
     }
 }
